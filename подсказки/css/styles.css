@@ -1,0 +1,39 @@
+.wrapper {
+    margin: 0 auto;
+    padding: 50px 0 0 15px;
+    width: 600px;
+    height: 150px;
+    background: #93a7b0;
+    border-radius: 35px/20px ;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .8);
+}
+
+.row {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+label {
+    font: 14px 'Arial';
+    text-transform: uppercase;
+    display: inline-block;
+    width: 100px;
+    color: #000;
+}
+
+.tooltip {
+    display: none;
+    background: #fff;
+    position: absolute;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .5);
+    padding: 10px;
+    border-radius: 3px;
+    z-index: 1;
+    width: 240px;
+    left: 320px;
+    top: -10px;
+}
+
+.input-field {
+    width: 200px;
+}

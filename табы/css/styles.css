@@ -1,0 +1,62 @@
+.wrapper{
+    margin: 0 auto;
+    width: 800px;
+    height: 200px;
+    background: url(../img/pattern.png);
+    border-radius: 40px/25px ;
+    box-shadow: 0 0 15px #000;
+}
+
+.tabs{
+    padding: 0 0 0 120px;
+}
+
+button{
+    margin: 10px -1.95px;
+    border: none;
+}
+
+.tabs__button.tabs__button-2.tabs__button-3 {
+    display: inline-block;
+}
+
+.tabs__button.active,.tabs__button-2.active,.tabs__button-3.active {
+    background: darkgrey;
+    background-color: rgba(0, 0, 0, 0.43);
+    color: #fff;
+    border: none;
+}
+
+.tabs__button.tabs__button-2.tabs__button-3:hover {
+    background: linear-gradient( #c0c0c0, #97a2a6);
+
+}
+
+
+.tabs__button{
+    border-radius: 10px 0 0 10px;
+    padding: 20px 70px 20px 70px;
+}
+
+.tabs__button-2{
+    padding: 20px 70px 20px 70px;
+}
+
+.tabs__button-3{
+    border-radius: 0 10px 10px 0;
+    padding: 20px 70px 20px 70px;
+}
+
+.content-block{
+    color: #fff;
+    width: 700px;
+    padding: 0 0 0 60px;
+}
+
+.content-block__item {
+    display: none;
+}
+
+.content-block__item.is-shown {
+    display: block;
+}
