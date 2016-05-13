@@ -1,5 +1,4 @@
 $(document).ready(function() {
-
   var $inputField = $('.input-field');
   $inputField.on('mouseenter', function() {
     showTooltip($(this));
@@ -8,14 +7,21 @@ $(document).ready(function() {
   $inputField.on('mouseleave', function() {
     hideTooltip($(this));
   });
+
+  $('#button-show-help').on('click', function() {
+    $inputField.mouseenter();
+  });
 });
 
 
 function showTooltip($el) {
   var tooltipText = $el.attr('data-title');
 
-  $el.after('<div class="tooltip">'+tooltipText+'</div>').next('.tooltip').fadeIn(300);
+  if (!$el.next('.tooltip').length) {
+    $el.after('<div class="tooltip">'+tooltipText+'</div>').next('.tooltip').fadeIn(300);
+  }
 }
+
 
 function hideTooltip($el) {
   $el.next('.tooltip').fadeOut(300, removeTooltip);
@@ -24,6 +30,8 @@ function hideTooltip($el) {
     $(this).remove();
   }
 }
+
+
 
 //(function() {
 //    var Tabs = {
